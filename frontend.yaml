@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: mymicroserviceapp1.azurecr.io/frontend
+          image: registry.digitalocean.com/kube-app-registry/frontend
           ports:
             - containerPort: 8080
           env:

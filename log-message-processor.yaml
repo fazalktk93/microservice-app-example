@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: log-message-processor
-          image: mymicroserviceapp1.azurecr.io/log-message-processor
+          image: registry.digitalocean.com/kube-app-registry/log-message-processor
           env:
             - name: REDIS_HOST
               value: "redis"

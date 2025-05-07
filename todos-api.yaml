@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: todos-api
-          image: mymicroserviceapp1.azurecr.io/todos-api
+          image: registry.digitalocean.com/kube-app-registry/todos-api
           ports:
             - containerPort: 8082
           env:

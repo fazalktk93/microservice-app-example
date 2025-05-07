@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: users-api
-          image: mymicroserviceapp1.azurecr.io/users-api
+          image: registry.digitalocean.com/kube-app-registry/users-api
           ports:
             - containerPort: 8083
           env:
