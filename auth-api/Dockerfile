@@ -11,5 +11,4 @@ RUN dep ensure
 
 RUN go build -o auth-api
 
-CMD /go/src/app/auth-api
-
+CMD ["/go/src/app/auth-api"]
