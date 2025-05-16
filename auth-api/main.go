@@ -24,7 +24,14 @@ var (
 )
 
 func main() {
-	hostport := ":" + os.Getenv("AUTH_API_PORT")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = os.Getenv("AUTH_API_PORT") // optional override
+	}
+	if port == "" {
+		port = "8081" // local fallback
+	}
+	hostport := ":" + port
 	userAPIAddress := os.Getenv("USERS_API_ADDRESS")
 
 	envJwtSecret := os.Getenv("JWT_SECRET")
